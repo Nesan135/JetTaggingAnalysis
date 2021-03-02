@@ -1,4 +1,4 @@
-nsubrama.cc
+*nsubrama.cc
 *.pyc
 BatchLog/*
 ../NtupleMaker/nsubrama.cc
