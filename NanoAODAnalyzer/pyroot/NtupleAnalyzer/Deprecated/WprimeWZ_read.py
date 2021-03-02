@@ -241,7 +241,7 @@ pdfname="_W_msd"
 legname=["W boson"]
 # legname=["#bf{#DeltaR(AK8,W)<0.8}", "#bf{max#DeltaR(AK8,q)<0.8}"]
 
-## SETUP LEGENDARY ##
+## SETUP LEGENDS ##
 legpos = "Right"
 if legpos == "Left":
   xLat = 0.2
