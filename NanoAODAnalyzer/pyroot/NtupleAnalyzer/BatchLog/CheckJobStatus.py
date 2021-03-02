@@ -1,13 +1,11 @@
-import os 
-import glob
-import argparse
+import os, glob, argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-d' , '--delComplete', action='store_true')
 args = parser.parse_args()
 delComplete = args.delComplete
 
-allOutFile =  glob.glob('./Ntuple.*.out')
+allOutFile =  glob.glob('./Histo.*.out')
 allOutFile.sort() # sort by name
 
 jobsDone=[]
@@ -18,7 +16,7 @@ for fileName in allOutFile:
 
 
   lines = file.read()
-  if "ProcessNanoAOD_AnaJetTagging::DONE" in lines:
+  if "Process_Read::DONE" in lines:
     jobsDone.append(fileName)
   else:
     jobsNotDone.append(fileName)
